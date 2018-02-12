@@ -34,16 +34,15 @@ class SendNotificationsRequest implements ShouldQueue
      */
     public function handle()
     {
-
         try
         {
             $title = 'Anfrage Genusshaus';
 
             $client = new Client(['headers' => ['Accept' => 'application/json', 'Content-Type' => 'application/json']]);
 
-            $response = $client->request('POST', 'https://erp.smartgate.ch/api/webhook/tickets', [
+            $response = $client->request('POST', env('TICKETING_WEBHOOK_URL'), [
                 'form_params' => [
-                    'auth_key' => env('WEBHOOK_AUTH_KEY'),
+                    'auth_key' => env('TICKETING_WEBHOOK_AUTH_KEY'),
 
                     'tags' => ['genusshaus','form'],
                     'title' => $title,
