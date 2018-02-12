@@ -1,0 +1,42 @@
+
+.navbar-item
+{
+    text-transform: uppercase;
+}
+
+
+
+
+
+.powered
+{
+    background-color: transparent;
+}
+
+.powered a
+{
+    color: black;
+}
+
+
+.hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .hero.is-info .navbar-link:hover, .hero.is-info .navbar-link.is-active {
+    background-color: transparent;
+    color: darkgrey;
+}
+
+
+.hero.is-info .navbar-menu {
+    background-color: transparent;
+
+}
+
+.contact-icon
+{
+    margin-right: 15px;
+}
+
+.imprint-icons
+{
+    margin-top: 15px;
+    margin-right: 10px;
+}
