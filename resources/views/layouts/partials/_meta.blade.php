@@ -5,6 +5,7 @@
 @if(App::isLocal())
 
 <meta name="robots" content="noindex, nofollow">
+<title>Genusshaus</title>
 
 @else
 
