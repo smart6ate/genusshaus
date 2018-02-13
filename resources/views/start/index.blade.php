@@ -97,7 +97,7 @@
             <div class="container">
 
                 <p class="subtitle is-3 has-text-centered">
-                    <strong>Tja</strong>
+                    <strong>Lorem Ipsum </strong>
                 </p>
 
                 <div class="columns is-multiline">
