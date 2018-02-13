@@ -5,8 +5,9 @@ Route::get('/', 'StartController@index')->name('start.index');
 
 Route::group(['prefix'=>'de'], function(){
 
-
     Route::get('/', 'StartController@index')->name('start.index');
+
+    Route::get('/genusshaus/{uuid}', 'PlacesController@show')->name('places.show');
 
     Route::get('/produkt', 'ProductController@index')->name('product.index');
 
@@ -20,5 +21,7 @@ Route::group(['prefix'=>'de'], function(){
     Route::get('/impressum', 'ImprintController@index')->name('imprint.index');
     Route::get('/datenschutz', 'PrivacyController@index')->name('privacy.index');
     Route::get('/geschaeftsbedingungen', 'TermsController@index')->name('terms.index');
+
+
 });
 

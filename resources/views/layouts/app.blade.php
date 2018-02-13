@@ -8,7 +8,8 @@
 
     <script defer src="{{ asset('js/fontawesome.js') }}"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bulma-v062.css') }}" />
 

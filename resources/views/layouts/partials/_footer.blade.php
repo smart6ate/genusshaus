@@ -16,11 +16,7 @@
                         <a href="tel:0041615359826"></a>
                         <a href="mailto::kontakt@genusshaus.ch">kontakt@genusshaus.ch</a>
 
-
                     </p>
-
-
-
 
                 </div>
 
@@ -61,14 +57,13 @@
 
                 <br><br>
 
-
             </p>
 
             <div class="column is-4-mobile is-offset-4-mobile is-2-tablet is-offset-5-tablet ">
                 <a target="_blank" href="https://itunes.apple.com/ch/app/genusshaus/id1317801092?l=en&mt=8&ign-mpt=uo%3D4"><img src="{{ asset('images/ios/app_store.png') }}" alt="Genusshaus iOS App"></a>
             </div>
             <p>
-                <a style="font-size: 11px;" target="_blank" href="https://www.smartgate.ch">smartgate AG - v1.0.0</a>
+                <a style="font-size: 11px;" target="_blank" href="https://www.smartgate.ch">smartgate AG - v1.0.1</a>
             </p>
         </div>
     </div>

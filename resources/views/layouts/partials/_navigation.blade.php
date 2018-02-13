@@ -38,16 +38,24 @@
             <div class="navbar-end">
 
 
-                <a href="{{ route('contact.index') }}" class="navbar-item">
-                   Kostenlos Teilnehmen
+                <a href="{{ route('start.index') }}" class="navbar-item">
+                    <i class="fas fa-home"></i>
                 </a>
 
+
                 <span class="navbar-item">
-              <a href="https://api.genusshaus.com" class="button is-inverted is-rounded">
-                <span>Anmelden</span>
+              <a href="{{ route('contact.index') }}" class="button is-inverted is-rounded">
+                <span>  Kostenlos Teilnehmen</span>
               </a>
 
             </span>
+
+
+
+                <a href="https://dev-do.genusshaus.ch" class="navbar-item">
+                    Anmelden
+                </a>
+
             </div>
         </div>
     </div>

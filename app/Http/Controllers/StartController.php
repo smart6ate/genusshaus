@@ -2,16 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
+use GuzzleHttp\Client;
 use Illuminate\Support\Facades\File;
-use Illuminate\Http\Request;
 
 class StartController extends Controller
 {
     public function index()
     {
         $path = base_path('data/start.json');
-
 
         if(File::exists($path))
         {
@@ -30,6 +28,20 @@ class StartController extends Controller
             $meta = null;
         }
 
-        return view('start.index', compact('meta'));
+
+        try
+        {
+            $client = new Client(['base_uri' => 'http://tasty.dev']);
+            $response = $client->request('GET', 'api/v1/landingpage/places');
+
+            $places = json_decode($response->getBody())->data;
+
+        }
+        catch (\Exception $exception)
+        {
+            $places = '';
+        }
+
+        return view('start.index', compact('meta','places'));
     }
 }
