@@ -12,7 +12,7 @@ class PlacesController extends Controller
 
         try
         {
-            $client = new Client(['base_uri' => 'http://tasty.dev']);
+            $client = new Client(['base_uri' => env('BACKEND_BASEL_URL')]);
             $response = $client->request('GET', 'api/v1/landingpage/places/show/' . $uuid);
 
             $place = json_decode($response->getBody())->data;
@@ -32,7 +32,7 @@ class PlacesController extends Controller
         try
         {
 
-            $client = new Client(['base_uri' => 'http://tasty.dev']);
+            $client = new Client(['base_uri' => env('BACKEND_BASEL_URL')]);
             $response = $client->request('GET', 'api/v1/landingpage/places/recommendations/' . $uuid);
 
             $recommendations = json_decode($response->getBody())->data;
