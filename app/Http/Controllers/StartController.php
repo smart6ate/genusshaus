@@ -31,7 +31,7 @@ class StartController extends Controller
 
         try
         {
-            $client = new Client(['base_uri' => 'http://tasty.dev']);
+            $client = new Client(['base_uri' => env('BACKEND_BASEL_URL')]);
             $response = $client->request('GET', 'api/v1/landingpage/places');
 
             $places = json_decode($response->getBody())->data;
