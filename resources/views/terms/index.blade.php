@@ -20,7 +20,7 @@
 
                 <div class="column is-8 is-offset-2">
 
-                    <h1 class="title is-1">Datenschutz</h1>
+                    <h1 class="title is-1">Geschäftsbedingungen</h1>
 
                     <hr>
 
